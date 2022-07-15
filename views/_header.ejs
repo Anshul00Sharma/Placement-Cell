@@ -1,0 +1,15 @@
+<nav class="navbar sticky-top bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Placement Cell</a>
+        <div class="d-flex authentication-buttons">
+            <% if(locals.user) { %>
+                <a href="/users/sign-out"><button class="btn btn-outline-danger " type="button">Sign-out</button></a>
+                <% } else {%>
+                    <a href="/users/sign-in" class="me-3"><button class="btn btn-outline-success "
+                            type="button">Sign-in</button></a>
+                    <a href="/users/sign-up"><button class="btn btn-outline-primary " type="button">Sign-up</button></a>
+                    <% } %>
+
+        </div>
+    </div>
+</nav>

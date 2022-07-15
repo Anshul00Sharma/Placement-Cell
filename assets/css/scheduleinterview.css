@@ -1,0 +1,25 @@
+#title {
+    text-align: center;
+    margin-top: 10px;
+}
+#add-student-form {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#add-student-form form {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    
+}
+#student-schedule-list table {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+    
+
+}

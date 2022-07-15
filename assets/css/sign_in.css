@@ -1,0 +1,22 @@
+.sign-in-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+.sign-in-container>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.sign-in-submit {
+    width: 50%;
+    margin: auto;
+    
+}

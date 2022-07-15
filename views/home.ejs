@@ -1,0 +1,22 @@
+<% if(locals.user){ %>
+    <div class="home-outer-container">
+        <div class="home-inner-container">
+            <h2 style="text-align: center;">Welcome <%= user.name %>
+            </h2>
+            <a href="/students/fetch" class="home-links btn btn-light">Students <i
+                    class="fa-solid fa-graduation-cap"></i></a>
+            <a href="/csv/download" class="home-links btn btn-light mt-2">Download Student Data <i
+                    class="fa-solid fa-download"></i></a>
+            <a href="/interviews/fetch-interview" class="home-links btn btn-light mt-2">Interviews <i
+                    class="fa-solid fa-briefcase"></i></a>
+
+        </div>
+
+    </div>
+    <% }else{ %>
+
+        <h1 style="text-align: center;">
+            Sign in to get Student Information
+        </h1>
+
+        <% } %>
