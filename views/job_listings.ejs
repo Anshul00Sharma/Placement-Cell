@@ -1,0 +1,23 @@
+<h1 class="job-heading">Jobs Listing</h1>
+<div class="job-list-container">
+    <ul class="list-group job-list">
+        <%for (job of jobs) {%>
+            <li class="list-group-item list-group-item-info ">
+                <h4><img src="<%= job.company_logo %> " alt=""></h4>
+                <h3>
+                    <%= job.title %>
+                </h3>
+                <h4>Job Type: <%= job.job_type %>
+                </h4>
+                <h4>Loaction: <%= job.candidate_required_location %>
+                </h4>
+                <h4>Salary: <%= job.salary %>
+                </h4>
+                <h4><a href="<%= job.url %> ">Details</a></h4>
+            </li>
+
+            <% } %>
+    </ul>
+
+
+</div>

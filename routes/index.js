@@ -21,5 +21,6 @@ router.use(
   passport.checkAuthentication,
   require("./interviewSchedules")
 );
+router.use("/job", passport.checkAuthentication, require("./job"));
 
 module.exports = router;

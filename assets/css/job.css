@@ -1,0 +1,11 @@
+.job-heading {
+    text-align: center;
+}
+.job-list {
+    width: 40%;
+}
+.job-list-container {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
