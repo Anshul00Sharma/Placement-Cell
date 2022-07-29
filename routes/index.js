@@ -1,5 +1,6 @@
 // importing express
 const express = require("express");
+//  passport for checking authentication
 const passport = require("passport");
 // intitialize router
 const router = express.Router();
@@ -7,6 +8,7 @@ const homeController = require("../controllers/home_controller");
 
 console.log("Router Loaded");
 
+// all the rotes for placement cell app
 router.get("/", homeController.home);
 router.use("/users", require("./users"));
 router.use("/csv", passport.checkAuthentication, require("./csv"));

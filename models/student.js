@@ -1,6 +1,7 @@
 //Schema for the Students
 const mongoose = require("mongoose");
 
+// creating student schema
 const studentSchema = new mongoose.Schema(
   {
     name: {
@@ -34,5 +35,6 @@ const studentSchema = new mongoose.Schema(
   }
 );
 
+// exporting student schema
 const Student = mongoose.model("Student", studentSchema);
 module.exports = Student;

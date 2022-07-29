@@ -1,4 +1,5 @@
 // render the sign-up page
+// importing user model for Authentication
 const User = require("../models/user");
 module.exports.signUp = function (req, res) {
   if (req.isAuthenticated()) {

@@ -1,3 +1,4 @@
+// importing interview model
 const Interview = require("../models/interview");
 
 //Controller for the Creating the Comapny and Interview

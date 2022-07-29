@@ -1,4 +1,5 @@
 //Schema for fetching the details of students of particular interview selected
+
 const mongoose = require("mongoose");
 
 const interviewSchema = new mongoose.Schema(
@@ -35,6 +36,6 @@ const interviewSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
-
+// exporting interview schema
 const Interview = mongoose.model("Interview", interviewSchema);
 module.exports = Interview;

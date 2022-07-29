@@ -1,9 +1,13 @@
+// importing student and interview models
 const Student = require("../models/student");
 const Interview = require("../models/interview");
+// importing Parser for converting json to csv
 const { Parser } = require("json2csv");
 
+// for converting all student data to csv
 module.exports.downloadCSV = async function (req, res) {
   try {
+    // getting all interviews
     let interview = await Interview.find({}).populate({
       path: "listofstudents.student",
       model: "Student",

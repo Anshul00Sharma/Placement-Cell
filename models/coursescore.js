@@ -1,6 +1,7 @@
 //Schema for course scores of particular student
 const mongoose = require("mongoose");
 
+// schema for storing all the scores
 const courseScoreSchema = new mongoose.Schema(
   {
     dsa: {
@@ -25,5 +26,6 @@ const courseScoreSchema = new mongoose.Schema(
   }
 );
 
+// exporting schema
 const CourseScore = mongoose.model("CourseScore", courseScoreSchema);
 module.exports = CourseScore;

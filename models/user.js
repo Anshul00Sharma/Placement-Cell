@@ -1,5 +1,6 @@
+// importing mongoose
 const mongoose = require("mongoose");
-
+// creating user schema for Authentication
 const userSchema = new mongoose.Schema(
   {
     email: {
@@ -25,6 +26,6 @@ const userSchema = new mongoose.Schema(
   }
 );
 
+// exporting user schema
 const User = mongoose.model("User", userSchema);
-
 module.exports = User;

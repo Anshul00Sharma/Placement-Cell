@@ -1,12 +1,12 @@
+// importing mongoose
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+// mongodb URL
 const MongoDB_URI = "mongodb://localhost/PlacementCell";
-MongoDB_URII =
-  "mongodb+srv://Sharma:n5L7GC4r9jgRb9gO@cluster0.rrarjfe.mongodb.net/PlacementCell?retryWrites=true&w=majority";
 
 mongoose
-  .connect(MongoDB_URII)
+  .connect(process.env.MongoDB_URI || MongoDB_URI)
   .then(() => {
     console.log("connection successfull");
   })
@@ -14,13 +14,14 @@ mongoose
 
 const db = mongoose.connection;
 
+// error handling
 db.addListener(
   "error",
   console.error.bind(console, "Error connection to mongodb")
 );
-
 db.once("open", function () {
   console.log("Connected to database :: MongoDB");
 });
 
+// exporting db
 module.exports = db;

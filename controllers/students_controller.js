@@ -9,6 +9,7 @@ module.exports.createStudent = async function (req, res) {
     if (student) {
       return res.redirect("back");
     } else {
+      // putting form data into student and CourseScore Models
       let student = await Student.create({
         name: req.body.name,
         email: req.body.email,
