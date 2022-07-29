@@ -6,6 +6,7 @@ const db = require("./config/mongoose");
 const session = require("express-session");
 const passport = require("passport");
 const passportLocal = require("./config/passport-local-strategy");
+require("dotenv").config();
 
 const MongoStore = require("connect-mongo");
 // setting up layout
